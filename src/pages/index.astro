@@ -1,16 +1,12 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
+import Badge from "../components/Badge.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Portfolio Astro">
+  <main  >
+    <h1 class="text-4xl">Hola soy Marcos Sosa <Badge>Disponible para laburar</Badge></h1>
+    <h2 class="text-xl">No tengo experiencia laburando. Desarrollador Web Mayormente Frontend. De Tierra del Fuego, Argentina 🇦🇷. Me especializo en ReactJS y hacer aplicaciones bien piola</h2>
+    <p>Estoy cagado de hambre, quiero laburar porfa.</p>
+  </main>
+</Layout>
