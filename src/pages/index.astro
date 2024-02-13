@@ -1,12 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Badge from "../components/Badge.astro"
+import { Icon } from "astro-icon/components"
 ---
 
 <Layout title="Portfolio Astro">
-  <main  >
-    <h1 class="text-4xl">Hola soy Marcos Sosa <Badge>Disponible para laburar</Badge></h1>
-    <h2 class="text-xl">No tengo experiencia laburando. Desarrollador Web Mayormente Frontend. De Tierra del Fuego, Argentina 🇦🇷. Me especializo en ReactJS y hacer aplicaciones bien piola</h2>
-    <p>Estoy cagado de hambre, quiero laburar porfa.</p>
+  <main>
+    <section class="flex flex-col mx-auto w-full lg:w-[800px] py-44 gap-6">
+      <header class="flex">
+        <aside class="flex flex-col items-center w-1/4 p-8">
+          <img
+            class="rounded-full w-full"
+            src="https://i.pinimg.com/736x/de/b7/f4/deb7f42c7c276a16dd760ee93acca4ef.jpg"
+            alt="imagenxd"
+          />
+        </aside>
+        <article class="flex flex-col w-3/4">
+          <h1 class="flex gap-x-4 py-8 font-bold text-5xl">
+            Hola soy Marcos Sosa 
+          </h1>
+          <h2 class="text-xl opacity-90">No tengo experiencia laburando. Desarrollador Web Mayormente Frontend. De Tierra del Fuego, Argentina 🇦🇷. Me especializo en ReactJS y hacer aplicaciones bien piola</h2>
+        </article>
+      </header>
+      <footer class="flex">
+        <a
+          href="https://linkedin.com/"
+          target="_blank"
+          class="flex items-center"
+        >
+          <Badge>Disponible para laburar</Badge>
+        </a>
+        <button>
+          <Icon name="github"/>
+          Github
+        </button>
+        <button>
+          <Icon name="linkedin"/>
+          LinkedIn
+        </button>
+
+      </footer>
+    </section>
   </main>
 </Layout>
+
