@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Badge from "../components/Badge.astro"
+import SocialPill from "../components/SocialPill.astro";
 import { Icon } from "astro-icon/components"
 ---
 
@@ -8,37 +9,24 @@ import { Icon } from "astro-icon/components"
   <main>
     <section class="flex flex-col mx-auto w-full lg:w-[800px] py-44 gap-6">
       <header class="flex">
-        <aside class="flex flex-col items-center w-1/4 p-8">
+        <article class="flex flex-col w-3/4">
+          <h1 class="flex pb-8 pt-4 font-bold text-5xl">
+            Hola soy Marcos Sosa 
+          </h1>
+          <h2 class="text-xl opacity-90">No tengo experiencia laburando. Desarrollador Web Mayormente Frontend. De Tierra del Fuego, Argentina 🇦🇷. Me especializo en ReactJS y hacer aplicaciones bien piola</h2>
+        </article>
+        <aside class="flex flex-col items-center justify-center w-1/4">
           <img
             class="rounded-full w-full"
             src="https://i.pinimg.com/736x/de/b7/f4/deb7f42c7c276a16dd760ee93acca4ef.jpg"
             alt="imagenxd"
           />
         </aside>
-        <article class="flex flex-col w-3/4">
-          <h1 class="flex gap-x-4 py-8 font-bold text-5xl">
-            Hola soy Marcos Sosa 
-          </h1>
-          <h2 class="text-xl opacity-90">No tengo experiencia laburando. Desarrollador Web Mayormente Frontend. De Tierra del Fuego, Argentina 🇦🇷. Me especializo en ReactJS y hacer aplicaciones bien piola</h2>
-        </article>
       </header>
-      <footer class="flex">
-        <a
-          href="https://linkedin.com/"
-          target="_blank"
-          class="flex items-center"
-        >
-          <Badge>Disponible para laburar</Badge>
-        </a>
-        <button>
-          <Icon name="github"/>
-          Github
-        </button>
-        <button>
-          <Icon name="linkedin"/>
-          LinkedIn
-        </button>
-
+      <footer class="flex gap-4">
+        <SocialPill url="https:/github.com" icon="github" text="GitHub" />
+        <SocialPill url="https:/linkedin.com" icon="linkedin" text="LinkedIn" />
+        <SocialPill url="https:/mail.google.com" icon="mail" text="marcossosa21415@gmail.com" />
       </footer>
     </section>
   </main>
